@@ -1,3 +1,6 @@
+import profile from "@/public/profile.webp";
+import Image from "next/image";
+
 export default function HomeHero() {
   return (
     <>
@@ -25,7 +28,7 @@ export default function HomeHero() {
                 
             </div>
             <div className="w-full flex justify-center">
-                <img src="https://avatars.githubusercontent.com/u/72213815?v=4" alt="Arindam Hazra" className="w-60 h-60" />
+                <Image src={profile} alt="Arindam Hazra" width={500} />
             </div>
         </div>
     </>
