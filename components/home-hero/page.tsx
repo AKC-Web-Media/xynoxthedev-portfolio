@@ -1,5 +1,9 @@
 import profile from "@/public/profile.webp";
 import Image from "next/image";
+import Link from "next/link";
+import github from "@/public/svg/github.svg";
+import x from "@/public/svg/x.svg";
+import linkedin from "@/public/svg/linkedin.svg";
 
 export default function HomeHero() {
   return (
@@ -25,6 +29,50 @@ export default function HomeHero() {
                 </p>
 
                 <hr className="" />
+                <div className="flex justify-between my-3 p-6">
+                    <Link
+                        href={""}
+                        className="flex items-center space-x-2"
+                    >
+                        <Image 
+                            src={github}
+                            alt="GitHub"
+                            width={30}
+                            height={30}
+                        />
+                        <p className="font-bold">
+                            GitHub
+                        </p>
+                    </Link>
+                    <Link
+                        href={""}
+                        className="flex items-center space-x-2"
+                    >
+                        <Image 
+                            src={x}
+                            alt="X"
+                            width={30}
+                            height={30}
+                        />
+                        <p className="font-bold">
+                            X
+                        </p>
+                    </Link>
+                    <Link
+                        href={""}
+                        className="flex items-center space-x-2"
+                    >
+                        <Image 
+                            src={linkedin}
+                            alt="LinkedIn"
+                            width={30}
+                            height={30}
+                        />
+                        <p className="font-bold">
+                            LinkedIn
+                        </p>
+                    </Link>
+                </div>
                 
             </div>
             <div className="w-full flex justify-center">
