@@ -10,6 +10,7 @@ import anilist from "@/public/svg/anilist.svg";
 import steam from "@/public/svg/steam.svg";
 import spotify from "@/public/svg/spotify.svg";
 import buymeacoffee from "@/public/svg/buymeacoffee.svg";
+import OrbitingCircles from "@/components/ui/orbiting-circles";
 
 export default function HomeHero() {
   return (
@@ -181,8 +182,63 @@ export default function HomeHero() {
                 </div>
                 
             </div>
-            <div className="w-full justify-center hidden md:flex">
-                <Image src={profile} alt="Arindam Hazra" width={450} />
+            <div className="w-full justify-center hidden md:flex relative">
+                <Image className="z-20 pointer-events-none" src={profile} alt="Arindam Hazra" width={450} />
+                <OrbitingCircles
+                    className="size-[30px] border-none bg-transparent"
+                    duration={20}
+                    delay={20}
+                    radius={80}
+                >
+                    <Image 
+                        src={instagram}
+                        alt="LinkedIn"
+                        width={25}
+                        height={25}
+                    />
+                </OrbitingCircles>
+                <OrbitingCircles
+                    className="size-[30px] border-none bg-transparent"
+                    duration={20}
+                    delay={10}
+                    radius={90}
+                >
+                    <Image 
+                        src={linkedin}
+                        alt="LinkedIn"
+                        width={25}
+                        height={25}
+                    />
+                </OrbitingCircles>
+            
+                {/* Outer Circles (reverse) */}
+                <OrbitingCircles
+                    className="size-[50px] border-none bg-transparent"
+                    radius={100}
+                    duration={20}
+                    reverse
+                >
+                    <Image 
+                        src={github}
+                        alt="LinkedIn"
+                        width={25}
+                        height={25}
+                    />
+                </OrbitingCircles>
+                <OrbitingCircles
+                    className="size-[50px] border-none bg-transparent"
+                    radius={110}
+                    duration={20}
+                    delay={20}
+                    reverse
+                >
+                    <Image 
+                        src={x}
+                        alt="LinkedIn"
+                        width={25}
+                        height={25}
+                    />
+                </OrbitingCircles>
             </div>
         </div>
     </>
