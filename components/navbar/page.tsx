@@ -26,12 +26,12 @@ export default function Navbar() {
                         sposorphip
                     </span>
                 </Link>
-                <Link href="/activity" className="text-white hover:text-gray-400">
+                {/* <Link href="/activity" className="text-white hover:text-gray-400">
                     <Image src="/svg/activity.svg" className='sm:hidden mx-1' alt="Activity" width={20} height={20} />
                     <span className='hidden sm:block mx-2'>
                         activity
                     </span>
-                </Link>
+                </Link> */}
             </div>
         </nav>
     );
