@@ -40,7 +40,7 @@ export default function Projects(){
                 Here are some of the projects I have worked on.
             </p>
         </div>
-        <div className="min-h-screen p-8">
+        <div className="p-8">
       <div className="flex flex-wrap justify-center max-w-4xl mx-auto">
         {frameworks.map((framework) => (
           <div key={framework.name} className="bg-gray-800 rounded-xl p-6 m-2 w-full md:w-[calc(50%-1rem)] flex flex-col justify-between">
