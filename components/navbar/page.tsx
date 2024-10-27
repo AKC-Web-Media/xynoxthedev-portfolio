@@ -44,7 +44,7 @@ export default function Navbar() {
                 <Link href="/sponsorship" className="text-white hover:text-gray-400">
                     <Image src="/svg/sponsors.svg" className='sm:hidden mx-1' alt="Sponsorship" width={20} height={20} />
                     <span className='hidden sm:block mx-2'>
-                        sposorphip
+                        sponsorship
                     </span>
                 </Link>
                 {/* <Link href="/activity" className="text-white hover:text-gray-400">

@@ -1,16 +1,33 @@
 import Navbar from "@/components/navbar/page"
+import Link from 'next/link'
 
-const projects = [
+interface FrameworkCard {
+    name: string
+    description: string
+    repo: string
+    link: string
+  }
+  
+  const frameworks: FrameworkCard[] = [
     {
-        title: "Project 1",
-        description: "This is project 1",
-        image: "https://via.placeholder.com/150",
-        github_repo: "xynoxthedev/xynoxthedev",
-        github_Link: "https://github.com/xynoxthedev/xynoxthedev",
-        stars: 0,
-        stargazers: 0,
+        name: 'A468 - Object Recognition & Manipulation Program',
+        description: 'A468 is a program that uses a webcam to detect objects and manipulate them in real-time.',
+        repo: '@xynoxthedev/a468',
+        link: "https://github.com/xynoxthedev/a468"
     },
-]
+    {
+        name: 'Dude Perfect Discord Bot',
+        description: 'Multi-purpose Discord Bot — Moderation, Management, Utilities, Fun and more ',
+        repo: '@Dude-Perfect-Discord-Bot/Dude-Perfect',
+        link: ""
+    },
+    {
+        name: 'Pizza Brand Website',
+        description: 'A website for a pizza brand that allows users to order pizza online.',
+        repo: "",
+        link: ""
+    },
+  ]
 
 export default function Projects(){
     return <>
@@ -23,25 +40,31 @@ export default function Projects(){
                 Here are some of the projects I have worked on.
             </p>
         </div>
-        <div className="flex ">
-            {projects.map((project, index) => {
-                return (   
-                    <div key={index} className="flex flex-row items-center justify-center">
-                        <div className="flex flex-col items-center justify-center">
-                            <p className="font-bold text-lg">{project.title}</p>
-                            <p className="font-bold text-sm">{project.description}</p>
-                            <div className="flex items-center justify-center space-x-5">
-                                <a href={project.github_Link} className="flex items-center space-x-2">
-                                    <img src="https://via.placeholder.com/30" alt="GitHub" className="w-5 h-5" />
-                                    <p className="font-bold">GitHub</p>
-                                </a>
-                                <p className="font-bold">{project.stars} Stars</p>
-                            </div>
-                        </div>
-                        <img src={project.image} alt="Project 1" className="w-48 h-48 rounded-full" />
-                    </div>
-                ) 
-            })}
-        </div>
+        <div className="min-h-screen p-8">
+      <div className="flex flex-wrap justify-center max-w-4xl mx-auto">
+        {frameworks.map((framework) => (
+          <div key={framework.name} className="bg-gray-800 rounded-xl p-6 m-2 w-full md:w-[calc(50%-1rem)] flex flex-col justify-between">
+            <div>
+              <div className="flex justify-between items-start mb-4">
+                <h2 className="text-xl font-semibold text-white">{framework.name}</h2>
+              </div>
+              <p className="text-gray-400 text-sm mb-4">{framework.description}</p>
+            </div>
+            <div className="flex items-center justify-between text-sm">
+              <div className="flex items-center text-blue-400">
+                <Link
+                    href={framework.link}
+                    passHref
+                    className="flex items-center"
+                    target="_blank"
+                >
+                    <span>{framework.repo}</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
     </>
 }
