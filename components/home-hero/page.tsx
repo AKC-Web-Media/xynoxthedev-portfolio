@@ -23,16 +23,16 @@ export default function HomeHero() {
                 <h1 className="text-center md:text-left font-black text-5xl text-purple-700">
                     Arindam Hazra
                 </h1>
-                <p className="my-2">
+                <p className="my-5">
                     Indian freelance fullstack developer and open-source contributor.
                 </p>
-                <p className="my-2">
+                <p className="my-5">
                     Driven by innovation while prioritizing practicality and user experience.
                 </p>
-                <p className="my-2">
+                <p className="my-5">
                     Primarily working with <span className="text-orange-400 font-bold">Java</span>, <span className="text-blue-400 font-bold">Python</span>, <span className="text-yellow-400 font-bold">JavaScript</span>, and <span className="text-green-500 font-bold">Node.js</span>, with a focus on cloud platforms and efficient database management.
                 </p>
-                <p className="my-2">
+                <p className="my-5">
                     Available for consulting and freelance projects. Let&apos;s connect if you&apos;re interested in working together or just want to chat! ✌️
                 </p>
                 <hr className="bg-slate-500 border-0 h-0.5" />
