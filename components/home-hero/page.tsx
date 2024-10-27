@@ -33,7 +33,7 @@ export default function HomeHero() {
                     Primarily working with <span className="text-orange-400 font-bold">Java</span>, <span className="text-blue-400 font-bold">Python</span>, <span className="text-yellow-400 font-bold">JavaScript</span>, and <span className="text-green-500 font-bold">Node.js</span>, with a focus on cloud platforms and efficient database management.
                 </p>
                 <p className="my-2">
-                    Available for consulting and freelance projects. Let's connect if you're interested in working together or just want to chat! ✌️
+                    Available for consulting and freelance projects. Let&apos;s connect if you&apos;re interested in working together or just want to chat! ✌️
                 </p>
                 <hr className="bg-slate-500 border-0 h-0.5" />
                 <div className="flex flex-row justify-between items-center my-3 p-6">

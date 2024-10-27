@@ -31,11 +31,11 @@ export default function Sponsorships(){
                         <div className="mt-4">
                             <h2 className="text-xl font-bold mb-2">📍| Who Am I?</h2>
                             <p className="text-sm text-gray-300 mb-4">
-                                I'm a freelance fullstack developer from India 🇮🇳, I have been into coding since 2018, looking into small things how it happens, how does it works, and grasping knowledge about all the things. Also, I'm always itchy for things to learn and getting everything done!
+                                I&apos;m a freelance fullstack developer from India 🇮🇳, I have been into coding since 2018, looking into small things how it happens, how does it works, and grasping knowledge about all the things. Also, I&apos;m always itchy for things to learn and getting everything done!
                             </p>
                             <h2 className="text-xl font-bold mb-2">📍| What Am I working On?</h2>
                             <p className="text-sm text-gray-300 mb-4">
-                                For now, the only thing I do is contribute to Open Source projects! Currently, I'm working on nothing that specific but yeah, soon there gonna be something which I'm planning to come with it in the future.
+                                For now, the only thing I do is contribute to Open Source projects! Currently, I&apos;m working on nothing that specific but yeah, soon there gonna be something which I&apos;m planning to come with it in the future.
                             </p>
                             <h2 className="text-xl font-bold mb-2">📍| Why should you support me?</h2>
                             <p className="text-sm text-gray-300 mb-4">
@@ -48,10 +48,10 @@ export default function Sponsorships(){
                     </div>
                 </div>
                 <div className="w-full flex flex-col md:flex-row justify-center items-center gap-2">
-                    <button className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center space-x-2 transition duration-300">
+                    <Link href={"https://github.com/sponsors/XynoxTheDev?o=esc"} className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center space-x-2 transition duration-300">
                         <Heart className="h-4 w-4 fill-pink-500" />
                         <span>Sponsor me on GitHub</span>
-                    </button>
+                    </Link>
                     <a href='https://ko-fi.com/I2I715AP90' target='_blank'><img height='36' className="border-0 h-9" src='https://storage.ko-fi.com/cdn/kofi2.png?v=6' alt='Buy Me a Coffee at ko-fi.com' /></a>
                 </div>
             </div>
