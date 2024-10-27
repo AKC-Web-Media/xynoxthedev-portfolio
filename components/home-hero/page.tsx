@@ -20,165 +20,129 @@ export default function HomeHero() {
                 <h1 className="text-center md:text-left font-black text-5xl">
                     Arindam Hazra
                 </h1>
-                <p className="my-3 text-center md:text-left">
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <p className="my-2">
+                    Indian freelance fullstack developer and open-source contributor.
                 </p>
-                <p className="mb-3 text-center md:text-left">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officia sed, minus quae aperiam eveniet repellendus vitae, quidem, quas quos. Quisquam, quidem. Quisquam, quidem.
+                <p className="my-2">
+                    Driven by innovation while prioritizing practicality and user experience.
                 </p>
-
-                <p className="mb-3 text-center md:text-left">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officia sed, minus quae aperiam eveniet repellendus vitae, 
+                <p className="my-2">
+                    Primarily working with Java, Python, JavaScript, and Node.js, with a focus on cloud platforms and efficient database management.
                 </p>
-
-                <p className="mb-3 text-center md:text-left">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officia sed, minus quae aperiam eveniet repellendus vitae, quidem.
+                <p className="my-2">
+                    Available for consulting and freelance projects. Let's connect if you're interested in working together or just want to chat! ✌️
                 </p>
-
-                <hr className="" />
-                <div className="flex flex-col justify-between my-3 p-6">
-                    <div className="flex justify-between my-2">
-                        <Link
-                            href={""}
-                            className="flex items-center gap-2"
-                            target="_blank"
-                            >
-                            <Image 
-                                src={linkedin}
-                                alt="LinkedIn"
-                                width={25}
-                                height={25}
-                                />
-                            <p className="font-bold">
-                                LinkedIn
-                            </p>
-                        </Link>
-                        <Link
-                            href={"https://github.com/xynoxthedev"}
-                            className="flex items-center gap-2"
-                            target="_blank"
-                            >
-                            <Image 
-                                src={github}
-                                alt="GitHub"
-                                width={25}
-                                height={25}
-                                />
-                            <p className="font-bold">
-                                GitHub
-                            </p>
-                        </Link>
-                        <Link
-                            href={""}
-                            className="flex items-center gap-2"
-                            target="_blank"
-                            >
-                            <Image 
-                                src={email}
-                                alt="X"
-                                width={25}
-                                height={25}
-                                />
-                            <p className="font-bold">
-                                Email
-                            </p>
-                        </Link>
-                    </div>
-                    <div className="flex justify-between my-2">
+                <hr className="bg-slate-500 border-0 h-0.5" />
+                <div className="flex flex-row justify-between items-center my-3 p-6">
                     <Link
-                            href={""}
-                            className="flex items-center gap-2"
-                            target="_blank"
-                            >
-                            <Image 
-                                src={instagram}
-                                alt="LinkedIn"
-                                width={25}
-                                height={25}
-                                />
-                            <p className="font-bold">
-                                Instagram
-                            </p>
-                        </Link>
-                        <Link
-                            href={"https://github.com/xynoxthedev"}
-                            className="flex items-center gap-2"
-                            target="_blank"
-                            >
-                            <Image 
-                                src={buymeacoffee}
-                                alt="GitHub"
-                                width={25}
-                                height={25}
-                                />
-                            <p className="font-bold">
-                                buy me a coffee
-                            </p>
-                        </Link>
-                        <Link
-                            href={""}
-                            className="flex items-center gap-2"
-                            target="_blank"
-                            >
-                            <Image 
-                                src={x}
-                                alt="X"
-                                width={25}
-                                height={25}
-                                />
-                            <p className="font-bold">
-                                X
-                            </p>
-                        </Link>
-                    </div>
-                    <div className="flex justify-between my-2">
+                        href={"https://www.linkedin.com/in/arindamhazra/"}
+                        className="flex items-center gap-2"
+                        target="_blank"
+                        >
+                        <Image 
+                            src={linkedin}
+                            alt="LinkedIn"
+                            width={25}
+                            height={25}
+                        />
+                    </Link>
                     <Link
-                            href={""}
-                            className="flex items-center gap-2"
-                            target="_blank"
-                            >
-                            <Image 
-                                src={anilist}
-                                alt="LinkedIn"
-                                width={25}
-                                height={25}
-                                className="invert"
-                                />
-                            <p className="font-bold">
-                                Anilist
-                            </p>
-                        </Link>
-                        <Link
-                            href={""}
-                            className="flex items-center gap-2"
-                            target="_blank"
+                        href={"https://github.com/xynoxthedev"}
+                        className="flex items-center gap-2"
+                        target="_blank"
                         >
-                            <Image 
-                                src={steam}
-                                alt="GitHub"
-                                width={25}
-                                height={25}
-                            />
-                            <p className="font-bold">
-                                Steam
-                            </p>
-                        </Link>
-                        <Link
-                            href={""}
-                            className="flex items-center gap-2"
-                            target="_blank"
+                        <Image 
+                            src={github}
+                            alt="GitHub"
+                            width={25}
+                            height={25}
+                        />
+                    </Link>
+                    <Link
+                        href={"https://www.instagram.com/xynoxthedev/"}
+                        className="flex items-center gap-2"
+                        target="_blank"
                         >
-                            <Image 
-                                src={spotify}
-                                alt="X"
-                                width={25}
-                                height={25}
-                            />
-                            <p className="font-bold">
-                                Spotify
-                            </p>
-                        </Link>
-                    </div>
+                        <Image 
+                            src={instagram}
+                            alt="Instagram"
+                            width={25}
+                            height={25}
+                        />
+                    </Link>
+                    {/* <Link
+                        href={"https://github.com/xynoxthedev"}
+                        className="flex items-center gap-2"
+                        target="_blank"
+                        >
+                        <Image 
+                            src={buymeacoffee}
+                            alt="Buy me a Coffee"
+                            width={25}
+                            height={25}
+                        />
+                    </Link> */}
+                    <Link
+                        href={"https://x.com/Arindamz03"}
+                        className="flex items-center gap-2"
+                        target="_blank"
+                        >
+                        <Image 
+                            src={x}
+                            alt="X"
+                            width={25}
+                            height={25}
+                        />
+                    </Link>
+                    <Link
+                        href={"https://steamcommunity.com/id/xynoxthedev/"}
+                        className="flex items-center gap-2"
+                        target="_blank"
+                    >
+                        <Image 
+                            src={steam}
+                            alt="Steam"
+                            width={25}
+                            height={25}
+                        />
+                    </Link>
+                    <Link
+                        href={"https://anilist.co/user/Xynox/"}
+                        className="flex items-center gap-2"
+                        target="_blank"
+                        >
+                        <Image 
+                            src={anilist}
+                            alt="AniList"
+                            width={25}
+                            height={25}
+                            className="invert"
+                        />
+                    </Link>
+                    <Link
+                        href={"https://open.spotify.com/user/zrei8evwinfjy9d27fjon68hh"}
+                        className="flex items-center gap-2"
+                        target="_blank"
+                    >
+                        <Image 
+                            src={spotify}
+                            alt="Spotify"
+                            width={25}
+                            height={25}
+                        />
+                    </Link>
+                    <Link
+                        href={"connect@xynoxthedev.xyz"}
+                        className="flex items-center gap-2"
+                        target="_blank"
+                        >
+                        <Image 
+                            src={email}
+                            alt="email"
+                            width={25}
+                            height={25}
+                        />
+                    </Link>
                 </div>
                 
             </div>
