@@ -4,20 +4,23 @@ import Link from "next/link";
 import github from "@/public/svg/github.svg";
 import x from "@/public/svg/x.svg";
 import linkedin from "@/public/svg/linkedin.svg";
-import email from "@/public/svg/email.svg";
 import instagram from "@/public/svg/instagram.svg";
 import anilist from "@/public/svg/anilist.svg";
 import steam from "@/public/svg/steam.svg";
 import spotify from "@/public/svg/spotify.svg";
-import buymeacoffee from "@/public/svg/buymeacoffee.svg";
+import discord from "@/public/svg/discord.svg";
 import OrbitingCircles from "@/components/ui/orbiting-circles";
+import vscodeinsider from "@/public/png/vs-code-insider.png";
+import archLinux from "@/public/png/arch-linux.png"
+import aws from "@/public/png/aws.png";
+import gcp from "@/public/webp/gcp.webp"; 
 
 export default function HomeHero() {
   return (
     <>
         <div className="flex px-5 md:w-8/12 mt-24 items-center mx-auto">
             <div className="w-full">
-                <h1 className="text-center md:text-left font-black text-5xl">
+                <h1 className="text-center md:text-left font-black text-5xl text-purple-700">
                     Arindam Hazra
                 </h1>
                 <p className="my-2">
@@ -27,7 +30,7 @@ export default function HomeHero() {
                     Driven by innovation while prioritizing practicality and user experience.
                 </p>
                 <p className="my-2">
-                    Primarily working with Java, Python, JavaScript, and Node.js, with a focus on cloud platforms and efficient database management.
+                    Primarily working with <span className="text-orange-400 font-bold">Java</span>, <span className="text-blue-400 font-bold">Python</span>, <span className="text-yellow-400 font-bold">JavaScript</span>, and <span className="text-green-500 font-bold">Node.js</span>, with a focus on cloud platforms and efficient database management.
                 </p>
                 <p className="my-2">
                     Available for consulting and freelance projects. Let's connect if you're interested in working together or just want to chat! ✌️
@@ -131,78 +134,82 @@ export default function HomeHero() {
                             height={25}
                         />
                     </Link>
-                    <Link
-                        href={"connect@xynoxthedev.xyz"}
-                        className="flex items-center gap-2"
-                        target="_blank"
-                        >
-                        <Image 
-                            src={email}
-                            alt="email"
-                            width={25}
-                            height={25}
-                        />
-                    </Link>
                 </div>
                 
             </div>
             <div className="w-full justify-center hidden md:flex relative">
-                <Image className="z-20 pointer-events-none" src={profile} alt="Arindam Hazra" width={450} />
+                <Image className="z-20 pointer-events-none " src={profile} alt="Arindam Hazra" width={450} />
+                <div className="absolute top-60">
                 <OrbitingCircles
-                    className="size-[30px] border-none bg-transparent"
+                    className="size-[50px] border-none bg-transparent"
                     duration={20}
-                    delay={20}
-                    radius={80}
+                    delay={30}
+                    radius={210}
                 >
                     <Image 
-                        src={instagram}
-                        alt="LinkedIn"
-                        width={25}
-                        height={25}
+                        src={aws}
+                        alt="Amazon Web Services"
+                        width={50}
+                        height={50}
                     />
                 </OrbitingCircles>
                 <OrbitingCircles
-                    className="size-[30px] border-none bg-transparent"
+                    className="size-[50px] border-none bg-transparent"
                     duration={20}
-                    delay={10}
-                    radius={90}
+                    delay={40}
+                    radius={220}
                 >
                     <Image 
-                        src={linkedin}
-                        alt="LinkedIn"
-                        width={25}
-                        height={25}
-                    />
+                        src={gcp}
+                        alt="Google Cloud Platform"
+                        width={50}
+                        height={50}
+                        />
                 </OrbitingCircles>
-            
                 {/* Outer Circles (reverse) */}
                 <OrbitingCircles
                     className="size-[50px] border-none bg-transparent"
-                    radius={100}
                     duration={20}
+                    delay={10}
+                    radius={250}
                     reverse
                 >
                     <Image 
-                        src={github}
-                        alt="LinkedIn"
-                        width={25}
-                        height={25}
+                        src={discord}
+                        alt="Discord"
+                        width={50}
+                        height={50}
                     />
                 </OrbitingCircles>
                 <OrbitingCircles
                     className="size-[50px] border-none bg-transparent"
-                    radius={110}
                     duration={20}
                     delay={20}
+                    radius={240}
                     reverse
                 >
                     <Image 
-                        src={x}
-                        alt="LinkedIn"
-                        width={25}
-                        height={25}
+                        src={vscodeinsider}
+                        alt="VS Code Insider"
+                        width={50}
+                        height={50}
                     />
                 </OrbitingCircles>
+                <OrbitingCircles
+                    className="size-[50px] border-none bg-transparent"
+                    radius={250}
+                    duration={20}
+                    delay={15}
+                    reverse
+                >
+                    <Image 
+                        src={archLinux}
+                        alt="Arch Linux"
+                        width={50}
+                        height={50}
+                    />
+                </OrbitingCircles>
+                </div>
             </div>
         </div>
     </>
