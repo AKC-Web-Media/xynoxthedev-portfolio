@@ -10,7 +10,7 @@ interface FrameworkCard {
   
   const frameworks: FrameworkCard[] = [
     {
-        name: 'A468 - Object Recognition & Manipulation Program',
+        name: 'A468',
         description: 'A468 is a program that uses a webcam to detect objects and manipulate them in real-time.',
         repo: '@xynoxthedev/a468',
         link: "https://github.com/xynoxthedev/a468"
