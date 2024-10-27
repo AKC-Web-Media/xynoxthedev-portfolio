@@ -43,7 +43,7 @@ export default function Projects(){
         <div className="p-8">
       <div className="flex flex-wrap justify-center max-w-4xl mx-auto">
         {frameworks.map((framework) => (
-          <div key={framework.name} className="bg-gray-800 rounded-xl p-6 m-2 w-full md:w-[calc(50%-1rem)] flex flex-col justify-between">
+          <div key={framework.name} className="bg-black/50 border-2 rounded-xl p-6 m-2 w-full md:w-[calc(50%-1rem)] flex flex-col justify-between">
             <div>
               <div className="flex justify-between items-start mb-4">
                 <h2 className="text-xl font-semibold text-white">{framework.name}</h2>
