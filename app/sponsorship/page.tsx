@@ -2,7 +2,7 @@ import Navbar from "@/components/navbar/page"
 import Link from "next/link"
 import Image from "next/image"
 import { Heart } from 'lucide-react'
-
+import appleMemoji from "@/public/webp/laptop.webp"
 
 export default function Sponsorships(){
     return <>
@@ -15,20 +15,23 @@ export default function Sponsorships(){
                 <div className="p-3 flex-col items-start space-x-4 mb-5">
                     <div className="flex items-center gap-5">
                         <Image
-                        src={"https://avatars.githubusercontent.com/u/51535331?v=4"}
+                        src={appleMemoji}
                         alt={`Arindams's avatar`}
-                        width={80}
-                        height={80}
-                        className="rounded-full"
+                        width={120}
+                        height={120}
                         />
-                        <div className="flex justify-between items-start mb-2">
-                            <h2 className="text-2xl font-semibold">
-                                Sponsor Me
+                        <div className="flex flex-col font-black text-2xl justify-between items-start mb-2">
+                            <h1>
+                                Arindam Hazra
+                            </h1>
+                            <h2 className="text-base font-semibold">
+                                Full Stack Developer | Cloud Enthusiast | Open Source Contributor
                             </h2>
                         </div>
                     </div>
                     <div className="flex-grow">
-                        <div className="mt-4">
+                        <div className="mt-15">
+                            <hr className="my-5 border-1" />
                             <h2 className="text-xl font-bold mb-2">📍| Who Am I?</h2>
                             <p className="text-sm text-gray-300 mb-4">
                                 I&apos;m a freelance fullstack developer from India 🇮🇳, I have been into coding since 2018, looking into small things how it happens, how does it works, and grasping knowledge about all the things. Also, I&apos;m always itchy for things to learn and getting everything done!
