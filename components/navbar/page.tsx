@@ -29,19 +29,19 @@ export default function Navbar() {
                 </Link>
             </div>
             <div className="text-sm flex items-center gap-1">
-                <Link href="/projects" className="text-white hover:text-gray-400">
+                <Link href="/projects" className="text-white hover:text-yellow-600">
                     <Image src="/svg/projects.svg" className='sm:hidden mx-1' alt="Projects" width={20} height={20} />
                     <span className='hidden sm:block mx-2'>
                         projects
                     </span>
                 </Link>
-                <Link href="/blog" className="text-white hover:text-gray-400">
+                <Link href="/blog" className="text-white hover:text-yellow-600">
                     <Image src="/svg/blog.svg" className='sm:hidden mx-1' alt="Blog" width={20} height={20} />
                     <span className='hidden sm:block mx-2'>
                         blog
                     </span>
                 </Link>
-                <Link href="/sponsorship" className="text-white hover:text-gray-400">
+                <Link href="/sponsorship" className="text-white hover:text-yellow-600">
                     <Image src="/svg/sponsors.svg" className='sm:hidden mx-1' alt="Sponsorship" width={20} height={20} />
                     <span className='hidden sm:block mx-2'>
                         sponsorship
